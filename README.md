@@ -1,7 +1,7 @@
 # React Music Site
 
 ![React Music Site Banner](./src/assets/site_image.png)  
-*Replace this placeholder image with your own banner or screenshot.*
+
 
 A React-based music streaming site that allows users to browse and play songs from various artists. This project is built using modern web technologies to provide a seamless and responsive user experience.
 
@@ -30,3 +30,10 @@ To run this project locally, follow these steps:
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/your-username/react-music-site.git
+
+   
+   cd react-music-site
+
+   npm install
+
+   npm run dev
