@@ -1,0 +1,70 @@
+#ListenSong_Main {
+  display: flex;
+}
+
+#ListenSong_Content {
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+  /* padding: 1rem; */
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+#ListenSong_Top1 {
+  position: relative;
+}
+
+#ListenSong_Top1 img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  filter: brightness(70%);
+  /* object-position: bottom; */
+  /* border: 1px solid white; */
+}
+
+#ListenSong_info {
+  /* border: 1px solid white; */
+  position: absolute;
+  bottom: 0;
+}
+
+#ListenSong_info p:nth-of-type(1) {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#ListenSong_info p:nth-of-type(2) {
+  font-size: 0.8rem;
+}
+
+#ListenSong_Range {
+  /* border: 1px solid white; */
+}
+
+#ListenSong_Range input {
+  width: 100%;
+}
+
+#ListenSong_Controls {
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+}
+
+#ListenSong_Controls button {
+  background-color: black;
+  color: white;
+  border: none;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+#ListenSong_Controls button:active {
+  transform: scale(0.95) translateY(0.2rem);
+}
