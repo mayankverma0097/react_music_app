@@ -11,7 +11,7 @@
   color: white;
   display: flex;
   flex-direction: column;
-  row-gap: 2rem;
+  row-gap: 3rem;
 }
 
 #ListenSong_Top1 {
@@ -29,6 +29,8 @@
 
 #ListenSong_info {
   /* border: 1px solid white; */
+  width: 100%;
+  padding: 0 2rem;
   position: absolute;
   bottom: 0;
 }
@@ -44,18 +46,51 @@
 
 #ListenSong_Range {
   /* border: 1px solid white; */
+  padding: 0 2rem;
 }
 
 #ListenSong_Range input {
   width: 100%;
+  -webkit-appearance: none; /* Remove default styling in WebKit browsers */
+  appearance: none;
+  height: 5px;
+  border-radius: 20px;
+  background-color: gray;
 }
+
+#ListenSong_Range input::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
 
 #ListenSong_Controls {
   /* border: 1px solid white; */
   display: flex;
   justify-content: center;
   column-gap: 2rem;
+  align-items: center;
 }
+
+
+#ListenSong_Controls_Play{
+  padding: .6rem .8rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid white;
+
+}
+
+
+
 
 #ListenSong_Controls button {
   background-color: black;
@@ -64,6 +99,11 @@
   transition: 0.2s;
   cursor: pointer;
 }
+
+
+
+
+
 
 #ListenSong_Controls button:active {
   transform: scale(0.95) translateY(0.2rem);

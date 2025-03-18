@@ -7,7 +7,7 @@ export default function SideBar() {
   return (
     <div>
      <div id="SideBar_Main">
-      <p id='SideBar_Main_siteName'><Link to={"/"}>Audio X</Link></p>
+      <p id='SideBar_Main_siteName'><Link to={"/"}>WaveTune</Link></p>
       
         <ul>
           <li><Link to={"/Home"}> <House size={20}  />  Home</Link></li>

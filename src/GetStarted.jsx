@@ -11,7 +11,7 @@ export default function GetStarted() {
       </div>
       <div id="GetStarted_box">
         <div id="GetStarted_content">
-          <p>Audio X</p>
+          <p>WaveTune</p>
           <p>Listen to free music from your favorite artists.</p>
           <Link to={"/Home"}>
             <button>Get Started</button>
