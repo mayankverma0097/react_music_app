@@ -1,9 +1,18 @@
 # React Music Site
 
-![React Music Site Banner](./src/assets/site_image.png) 
+![React Music Site Banner](./src/assets/Site_img1.png) 
 
 
-![React Music Site Banner2](./src/assets/site_image2.png) 
+![React Music Site Banner2](./src/assets/Site_img2.png) 
+
+
+![React Music Site Banner2](./src/assets/Site_img3.png)
+
+
+![React Music Site Banner2](./src/assets/Site_img4.png)
+
+
+![React Music Site Banner2](./src/assets/Site_img5.png)
 
 
 A React-based music streaming site that allows users to browse and play songs from various artists. This project is built using modern web technologies to provide a seamless and responsive user experience.
