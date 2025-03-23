@@ -32,7 +32,9 @@ export default function ListenSong() {
               <button>{<Rewind />} </button>
             </div>
             <div id="ListenSong_Controls_Play">
-              <button id="ListenSong_Controls_Play_button">{<Play fill="white"/>}</button>
+              <button id="ListenSong_Controls_Play_button">
+                {<Play fill="white" />}
+              </button>
             </div>
             <div>
               <button>{<FastForward />}</button>

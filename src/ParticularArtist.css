@@ -23,7 +23,7 @@
   width: 100%;
   object-fit: cover;
   /* object-position: center; */
-  /* object-position:0 70% ; */
+  object-position:0 20% ;
   /* object-position: bottom; */
   filter: brightness(40%);
 }
@@ -34,7 +34,7 @@
   position: absolute;
   top: 0;
   /* border: 1px solid white; */
-  background-color: rgba(47, 26, 111, 0.555);
+  /* background-color: rgba(47, 26, 111, 0.555); */
 }
 
 #ParticularArtist_About {
@@ -87,9 +87,10 @@
 }
 
 .ParticularArtist_Songs_a img {
-  width: 3rem;
-  border-radius: 10px;
-  /* height: 2rem; */
+  width: 15rem;
+  /* border-radius: 10px; */
+  height: 8rem;
+  object-fit: cover;
 }
 
 .ParticularArtist_Songs_a p:nth-of-type(1) {
