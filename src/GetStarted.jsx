@@ -10,7 +10,7 @@ export default function GetStarted() {
   return (
     <div>
       <div id="GetStarted_Main">
-        <img src={GetStarted_disk2} alt="" />
+        <img src={GetStarted_disk1} alt="" />
       </div>
       <div id="GetStarted_box">
         <div id="GetStarted_content">
