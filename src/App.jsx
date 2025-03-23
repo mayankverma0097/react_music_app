@@ -9,6 +9,7 @@ import ListenSong from "./ListenSong.jsx";
 
 export default function App() {
   let [SelectedArtist,setSelectedArtist]=useState()
+  let [SelectedSong,setSelectedSong]=useState()
   return (
     <div>
       <BrowserRouter>
@@ -16,8 +17,8 @@ export default function App() {
           <Route path="/" element={<GetStarted />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/Artists" element={<Artists setSelectedArtist={setSelectedArtist}/>} />
-          <Route path="/ParticularArtist" element={<ParticularArtist SelectedArtist={SelectedArtist}/>} />
-          <Route path="/ListenSong" element={<ListenSong />} />
+          <Route path="/ParticularArtist" element={<ParticularArtist SelectedArtist={SelectedArtist} setSelectedSong={setSelectedSong}/>} />
+          <Route path="/ListenSong" element={<ListenSong SelectedSong={SelectedSong}/>} />
         </Routes>
       </BrowserRouter>
     </div>
