@@ -216,3 +216,53 @@
 .Home_top6_popular_songs_b {
   cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+  #Home_top3 {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    /* border: 1px solid white; */
+  }
+
+  .Home_top3_box {
+    /* border: 1px solid white; */
+    width: 80vw;
+    height: 10rem;
+  }
+
+  .Home_top3_box:hover {
+    transform: none;
+  }
+
+  .Home_top3_box img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #Home_top5 {
+    /* border: 1px solid white; */
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+  }
+
+  .Home_top5_box {
+    width: 80vw;
+    height: 10rem;
+  }
+
+  .Home_top5_box:hover {
+    transform: none;
+  }
+
+  .Home_top5_box img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .Home_top2_a{
+    /* border: 1px solid white; */
+    width: 50%;
+  }
+}

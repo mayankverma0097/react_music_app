@@ -64,3 +64,18 @@
 #GetStarted_content button:active {
   transform: scale(0.95) translateY(0.2rem);
 }
+
+
+
+/* Responsive code */
+
+@media only screen and (max-width: 600px) {
+  #GetStarted_content p:nth-of-type(2) {
+    font-size: 1.3rem;
+    /* font-weight: 700; */
+  }
+
+  #GetStarted_content{
+    padding: 0 1rem;
+  }
+}

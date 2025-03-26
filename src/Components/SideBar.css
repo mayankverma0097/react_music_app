@@ -45,3 +45,17 @@
 #SideBar_Main p{
   margin-top: 1rem;
 }
+
+
+@media screen and (max-width:600px) {
+
+  #SideBar_Main_siteName {
+    display: none;
+  }
+  #SideBar_Main{
+    width: 15vw;
+  }
+  .SideBar_P{
+    display: none;
+  }
+}

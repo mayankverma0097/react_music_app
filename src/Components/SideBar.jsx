@@ -10,10 +10,11 @@ export default function SideBar() {
       <p id='SideBar_Main_siteName'><Link to={"/"}>WaveTune</Link></p>
       
         <ul>
-          <li><Link to={"/Home"}> <House size={20}  />  Home</Link></li>
+          <li><Link to={"/Home"}> <House size={20}  />  <span className='SideBar_P'>Home</span></Link></li>
             
-            <li> <Search size={20}/>  Search</li>
-            <li><BookOpen size={20} />  Library </li>
+            <li> <Link to={"/Home"}> <Search size={20}  />  <span className='SideBar_P'>Search</span></Link></li>
+
+            <li><Link to={"/Home"}> <BookOpen size={20}  />  <span className='SideBar_P'>Library</span></Link></li>
         </ul>
      </div>
     </div>
