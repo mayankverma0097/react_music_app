@@ -106,3 +106,35 @@
 .Artists_ChildBox_a_Content p:nth-of-type(2) {
   font-size: 1rem;
 }
+
+
+@media screen and (max-width:600px) {
+  #Artists_Content{
+    padding: 2rem 1rem ;
+  }
+
+  #Artists_Search_Form{
+    width: 90%;
+    /* border: 1px solid white; */
+  }
+  #Artists_Search_Form button{
+    width: 20%;
+  }
+
+  .Artists_ChildBox_a{
+    /* border: 1px solid white; */
+    /* width: 100%; */
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .Artists_ChildBox_a_img img{
+    width: 16rem;
+    height: 10rem;
+  }
+
+  .Artists_ChildBox_b{
+    display: none;
+  }
+  
+}
