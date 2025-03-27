@@ -11,7 +11,8 @@
   color: white;
   display: flex;
   flex-direction: column;
-  row-gap: 3rem;
+  /* row-gap: 3rem; */
+  justify-content: space-between;
 }
 
 #ListenSong_Top1 {
@@ -59,7 +60,7 @@
   background-color: gray;
 }
 
-#ListenSong_Range input::-webkit-slider-thumb{
+#ListenSong_Range input::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 15px;
@@ -69,29 +70,23 @@
   cursor: pointer;
 }
 
-
-
 #ListenSong_Controls {
   /* border: 1px solid white; */
   display: flex;
   justify-content: center;
   column-gap: 2rem;
   align-items: center;
+  margin-bottom: 1rem;
 }
 
-
-#ListenSong_Controls_Play{
-  padding: .6rem .8rem;
+#ListenSong_Controls_Play {
+  padding: 0.6rem 0.8rem;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1.5px solid white;
-
 }
-
-
-
 
 #ListenSong_Controls button {
   background-color: black;
@@ -101,11 +96,35 @@
   cursor: pointer;
 }
 
-
-
-
-
-
 #ListenSong_Controls button:active {
   transform: scale(0.95) translateY(0.2rem);
+}
+
+@media only screen and (max-width: 600px) {
+  #ListenSong_Top1 {
+    /* border: 1px solid white; */
+  }
+  #ListenSong_Top1 img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  #ListenSong_Range {
+    /* border: 1px solid white; */
+    padding: 0 1rem;
+  }
+
+  #ListenSong_info {
+    padding: 0 0.5rem;
+  }
+
+  #ListenSong_Controls {
+    /* border: 1px solid white; */
+    column-gap: 1.5rem;
+  }
+
+  /* #ListenSong_Controls_Play{
+    padding: ;
+  } */
 }
