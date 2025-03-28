@@ -3,14 +3,7 @@ import SideBar from "./Components/SideBar";
 import "./Home.css";
 import { Bell, Play } from "lucide-react";
 import myImg from "../src/assets/myImg.jpg";
-import top_3_img1 from "../src/assets/top3_img1.jpg";
-import top_3_img2 from "../src/assets/top3_img2.jpg";
-import top_3_img3 from "../src/assets/top3_img3.jpg";
-import top_3_img4 from "../src/assets/top3_img4.jpeg";
 
-import top4_img1 from "../src/assets/top4_img1.jpg";
-import top4_img2 from "../src/assets/top4_img2.jpeg";
-import top4_img3 from "../src/assets/top4_img3.jpeg";
 
 import Home_Artist_img1 from "../src/assets/Home_Artist_img1.png";
 import Home_Artist_img2 from "../src/assets/Home_Artist_img2.png";
