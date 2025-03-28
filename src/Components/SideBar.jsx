@@ -42,7 +42,7 @@ export default function SideBar() {
         </ul>
 
         <div id="SideBar_Toggle_button" onClick={toggleSidebar}>
-          <Menu />
+          <Menu color="teal" strokeWidth={4} size={30}/>
         </div>
       </div>
     </div>

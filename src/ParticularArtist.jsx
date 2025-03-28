@@ -445,7 +445,7 @@ export default function ParticularArtist({ SelectedArtist,setSelectedSong }) {
                 <span>31,654,432</span> monthly listeners
               </p>
             </div>
-            <div>{<Play size={20} fill="white" />}</div>
+            <div>{<Play size={20} fill="white" color="white"/>}</div>
           </div>
 
           <div id="ParticularArtist_Songs">

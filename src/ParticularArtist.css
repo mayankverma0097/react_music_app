@@ -7,8 +7,8 @@
   width: 100%;
   overflow: auto;
   /* padding: 1rem; */
-  background-color: black;
-  color: white;
+  background-color: ghostwhite;
+  color: black;
 }
 
 #ParticularArtist_Top1 {
@@ -51,11 +51,13 @@
 #ParticularArtist_About p:nth-of-type(1) {
   font-size: 2rem;
   font-weight: 600;
+  color: white;
 }
 
 #ParticularArtist_About p:nth-of-type(2) {
   font-size: 0.8rem;
   /* font-weight: 600; */
+  color: white;
 }
 
 #ParticularArtist_Songs {
@@ -69,10 +71,11 @@
 }
 
 .ParticularArtist_Songs_box {
-  /* border: 1px solid white; */
+  /* border: 1px solid black; */
   display: flex;
   justify-content: space-between;
   align-items: end;
+  padding: 0 .5rem;
   /* flex-direction: column; */
 }
 
@@ -86,13 +89,20 @@
   display: flex;
   column-gap: 1rem;
   cursor: pointer;
+  transition: .2s ease-in-out;
+
+}
+
+.ParticularArtist_Songs_a:hover{
+  transform: scale(1.05) translateY(-.2rem);
 }
 
 .ParticularArtist_Songs_a img {
   width: 15rem;
-  /* border-radius: 10px; */
+  border-radius: 10px;
   height: 8rem;
   object-fit: cover;
+  box-shadow: 0px 0px 10px gray;
 }
 
 .ParticularArtist_Songs_a p:nth-of-type(1) {
@@ -125,6 +135,9 @@
     flex-direction: column;
     width: 100%;
     row-gap: 1rem;
+  }
+  .ParticularArtist_Songs_a:hover{
+    transform: none
   }
 
   .ParticularArtist_Songs_a img {
