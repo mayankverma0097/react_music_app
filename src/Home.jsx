@@ -12,6 +12,15 @@ import top4_img1 from "../src/assets/top4_img1.jpg";
 import top4_img2 from "../src/assets/top4_img2.jpeg";
 import top4_img3 from "../src/assets/top4_img3.jpeg";
 
+import Home_Artist_img1 from "../src/assets/Home_Artist_img1.png";
+import Home_Artist_img2 from "../src/assets/Home_Artist_img2.png";
+import Home_pop_img2 from "../src/assets/Home_pop_img2.jpg";
+import Home_music_year from "../src/assets/Home_music_year.jpg";
+import Home_chill_img1 from "../src/assets/Home_chill_img1.png";
+import Home_rainy_img1 from "../src/assets/Home_rainy_img1.jpg";
+import Home_skate_img1 from "../src/assets/Home_skate_img1.jpg";
+import Home_folk_img1 from "../src/assets/Home_folk_img1.jpg";
+
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -40,28 +49,28 @@ export default function Home() {
 
           <div id="Home_top3">
             <div className="Home_top3_box">
-              <img src={top_3_img1} alt="" />
+              <img src={Home_chill_img1} alt="" />
               <div className="Home_top3_childbox" id="Home_top3_childbox1">
                 <p>Chill</p>
                 <p>Study Beats</p>
               </div>
             </div>
             <div className="Home_top3_box">
-              <img src={top_3_img2} alt="" />
+              <img src={Home_rainy_img1} alt="" />
               <div className="Home_top3_childbox" id="Home_top3_childbox2">
                 <p>Jazzy</p>
                 <p>Rainy Morning</p>
               </div>
             </div>
             <div className="Home_top3_box">
-              <img src={top_3_img3} alt="" />
+              <img src={Home_skate_img1} alt="" />
               <div className="Home_top3_childbox" id="Home_top3_childbox3">
                 <p>Weekend</p>
                 <p>Skate Punk</p>
               </div>
             </div>
             <div className="Home_top3_box">
-              <img src={top_3_img4} alt="" />
+              <img src={Home_folk_img1} alt="" />
               <div className="Home_top3_childbox" id="Home_top3_childbox4">
                 <p>Traditional</p>
                 <p>Folk Music</p>
@@ -76,7 +85,7 @@ export default function Home() {
 
           <div id="Home_top5">
             <div className="Home_top5_box">
-              <img src={top4_img1} alt="" />
+              <img src={Home_Artist_img2} alt="" />
               <Link to={"/Artists"}>
                 <div className="Home_top5_childbox">
                   <p>Your Top</p>
@@ -86,14 +95,14 @@ export default function Home() {
             </div>
 
             <div className="Home_top5_box">
-              <img src={top4_img2} alt="" />
+              <img src={Home_pop_img2} alt="" />
               <div className="Home_top5_childbox">
                 <p>Best of</p>
                 <p>Pop Music</p>
               </div>
             </div>
             <div className="Home_top5_box">
-              <img src={top4_img3} alt="" />
+              <img src={Home_music_year} alt="" />
               <div className="Home_top5_childbox">
                 <p>Your Year</p>
                 <p>2025</p>
