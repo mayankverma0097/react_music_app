@@ -7,11 +7,13 @@
   transform: translateX(-100%);
   transition: 0.2s ease-in-out;
   z-index: 1;
+  
 }
 
 #SideBar_Main.Open {
   /* position: relative; */
   transform: translateX(0);
+  box-shadow: 0px 0px 10px gray;
 }
 
 #SideBar_Main ul {
@@ -66,7 +68,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  #SideBar_Main_siteName {
+  /* #SideBar_Main_siteName {
     display: none;
   }
   #SideBar_Main {
@@ -74,5 +76,5 @@
   }
   .SideBar_P {
     display: none;
-  }
+  } */
 }

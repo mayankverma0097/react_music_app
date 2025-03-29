@@ -7,8 +7,8 @@
   width: 100%;
   overflow: auto;
   /* padding: 1rem; */
-  background-color: black;
-  color: white;
+  background-color: ghostwhite;
+  color: black;
   display: flex;
   flex-direction: column;
   /* row-gap: 3rem; */
@@ -32,7 +32,7 @@
 #ListenSong_info {
   /* border: 1px solid white; */
   width: 100%;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
   position: absolute;
   bottom: 0;
 }
@@ -40,10 +40,12 @@
 #ListenSong_info p:nth-of-type(1) {
   font-size: 1.2rem;
   font-weight: 600;
+  color: white;
 }
 
 #ListenSong_info p:nth-of-type(2) {
   font-size: 0.8rem;
+  color: white;
 }
 
 #ListenSong_Range {
@@ -65,7 +67,7 @@
   appearance: none;
   width: 15px;
   height: 15px;
-  background-color: white;
+  background-color: black;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -85,12 +87,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1.5px solid white;
+  border: 1.5px solid black;
 }
 
 #ListenSong_Controls button {
-  background-color: black;
-  color: white;
+  /* background-color: black; */
+  color: black;
   border: none;
   transition: 0.2s;
   cursor: pointer;
