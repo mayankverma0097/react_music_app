@@ -9,7 +9,7 @@
   width: 50%;
   height: 100vh;
   /* border: 1px solid black; */
-  background-image: url("src/assets/IMG20250329104338.png");
+  background-image: url('../src/assets/IMG20250329104338.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
