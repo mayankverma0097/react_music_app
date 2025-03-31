@@ -9,9 +9,9 @@ import artist2 from "../src/assets/artist2.png";
 import artist3 from "../src/assets/artist3.png";
 import artist4 from "../src/assets/artist4.png";
 
-export default function Artists({setSelectedArtist}) {
+export default function Artists({ setSelectedArtist }) {
   let Navigate = useNavigate();
-  let [SearchArtist,setSearchArtist]=useState("")
+  let [SearchArtist, setSearchArtist] = useState("");
   let [Artists, setArtists] = useState([
     
     {
@@ -80,6 +80,7 @@ export default function Artists({setSelectedArtist}) {
       artistImage:
         "https://www.rollingstone.com/wp-content/uploads/2024/08/shawn-mendes-why-why-why-song.jpg",
     },
+   
     {
       id: 11,
       artistName: "Katy Perry",
@@ -142,7 +143,9 @@ export default function Artists({setSelectedArtist}) {
     },
   ]);
 
-  let filetredArtist=Artists.filter((i)=>i.artistName.toLowerCase().includes(SearchArtist.toLowerCase()))
+  let filetredArtist = Artists.filter((i) =>
+    i.artistName.toLowerCase().includes(SearchArtist.toLowerCase())
+  );
   return (
     <div>
       <div id="Artists_Main">
@@ -154,26 +157,33 @@ export default function Artists({setSelectedArtist}) {
               onSubmit={(e) => {
                 e.preventDefault();
                 console.log(e.target[0].value);
-                setSearchArtist(e.target[0].value)
+                setSearchArtist(e.target[0].value);
                 e.target.reset();
               }}
             >
-              <input type="text" placeholder="Enter Artist" onChange={(e)=>{
-                // console.log(e.target.value);
-                setSearchArtist(e.target.value)
-              }} />
-              <button>{<Search size={20} />}</button>
+              <input
+                type="text"
+                placeholder="Search Artist"
+                onChange={(e) => {
+                  // console.log(e.target.value);
+                  setSearchArtist(e.target.value);
+                }}
+              />
+              <div id="Artist_Search_Icon">
+                <Search size={20}/>
+              </div>
+              {/* <button>{<Search size={20} />}</button> */}
             </form>
           </div>
 
           <div id="Artists_Box">
-            {filetredArtist.map((i) => (
+            {/* {filetredArtist.map((i) => (
               <div className="Artists_ChildBox" key={i.id}>
                 <div
                   className="Artists_ChildBox_a"
                   onClick={() => {
                     console.log("Artist Clicked");
-                    setSelectedArtist(i)
+                    setSelectedArtist(i);
                     Navigate("/ParticularArtist");
                   }}
                 >
@@ -185,15 +195,45 @@ export default function Artists({setSelectedArtist}) {
                     <p>Artist</p>
                   </div>
                 </div>
-                <div className="Artists_ChildBox_b">{<ChevronRight size={30} strokeWidth={3}/>}</div>
+                <div className="Artists_ChildBox_b">
+                  {<ChevronRight size={30} strokeWidth={3} />}
+                </div>
+              </div>
+            ))} */}
+
+
+{filetredArtist[0]==null?
+  <div className="Artist_not_Found">
+    <center>Artist Not Found!</center>
+  </div>
+:filetredArtist.map((i) => (
+              <div className="Artists_ChildBox" key={i.id}>
+                <div
+                  className="Artists_ChildBox_a"
+                  onClick={() => {
+                    console.log("Artist Clicked");
+                    setSelectedArtist(i);
+                    Navigate("/ParticularArtist");
+                  }}
+                >
+                  <div className="Artists_ChildBox_a_img">
+                    <img src={i.artistImage} alt="" />
+                  </div>
+                  <div className="Artists_ChildBox_a_Content">
+                    <p>{i.artistName}</p>
+                    <p>Artist</p>
+                  </div>
+                </div>
+                <div className="Artists_ChildBox_b">
+                  {<ChevronRight size={30} strokeWidth={3} />}
+                </div>
               </div>
             ))}
+
+
           </div>
 
-
-              {/* {console.log(filetredArtist)} */}
-
-
+          
         </div>
       </div>
     </div>
