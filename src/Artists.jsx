@@ -11,6 +11,7 @@ import artist4 from "../src/assets/artist4.png";
 
 export default function Artists({setSelectedArtist}) {
   let Navigate = useNavigate();
+  let [SearchArtist,setSearchArtist]=useState("")
   let [Artists, setArtists] = useState([
     
     {
@@ -140,6 +141,8 @@ export default function Artists({setSelectedArtist}) {
         "https://www.rollingstone.com/wp-content/uploads/2025/02/lizzo-returns-to-music.jpg?w=1581&h=1054&crop=1",
     },
   ]);
+
+  let filetredArtist=Artists.filter((i)=>i.artistName.toLowerCase().includes(SearchArtist.toLowerCase()))
   return (
     <div>
       <div id="Artists_Main">
@@ -151,16 +154,20 @@ export default function Artists({setSelectedArtist}) {
               onSubmit={(e) => {
                 e.preventDefault();
                 console.log(e.target[0].value);
+                setSearchArtist(e.target[0].value)
                 e.target.reset();
               }}
             >
-              <input type="text" placeholder="Enter Artist" />
+              <input type="text" placeholder="Enter Artist" onChange={(e)=>{
+                // console.log(e.target.value);
+                setSearchArtist(e.target.value)
+              }} />
               <button>{<Search size={20} />}</button>
             </form>
           </div>
 
           <div id="Artists_Box">
-            {Artists.map((i) => (
+            {filetredArtist.map((i) => (
               <div className="Artists_ChildBox" key={i.id}>
                 <div
                   className="Artists_ChildBox_a"
@@ -182,6 +189,11 @@ export default function Artists({setSelectedArtist}) {
               </div>
             ))}
           </div>
+
+
+              {/* {console.log(filetredArtist)} */}
+
+
         </div>
       </div>
     </div>

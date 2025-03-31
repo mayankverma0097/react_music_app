@@ -73,12 +73,13 @@
 }
 
 #ListenSong_Controls {
-  /* border: 1px solid white; */
+  /* border: 1px solid black; */
   display: flex;
   justify-content: center;
   column-gap: 2rem;
   align-items: center;
   margin-bottom: 1rem;
+  background-color: ghostwhite;
 }
 
 #ListenSong_Controls_Play {
@@ -91,7 +92,7 @@
 }
 
 #ListenSong_Controls button {
-  /* background-color: black; */
+  background-color: ghostwhite;
   color: black;
   border: none;
   transition: 0.2s;
@@ -118,7 +119,8 @@
   }
 
   #ListenSong_info {
-    padding: 0 0.5rem;
+    padding: 1rem 0.5rem;
+    /* border: 1px solid white; */
   }
 
   #ListenSong_Controls {
