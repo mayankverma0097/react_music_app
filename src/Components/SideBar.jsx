@@ -1,13 +1,24 @@
 import React, { useState } from "react";
 import "./SideBar.css";
-import { House, Search, BookOpen, Menu } from "lucide-react";
+import { House, Search, BookOpen, Menu, X,CircleChevronRight,CircleChevronLeft} from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function SideBar() {
   let [isOpen, setisOpen] = useState(false);
+  let [ToggleIcon, setToggleIcon] = useState(Menu);
+  let [temp, setTemp] = useState(0);
+ 
 
   function toggleSidebar() {
     setisOpen(!isOpen);
+    if (temp === 0) {
+      setToggleIcon(X);
+      setTemp(1);
+    } else {
+      setToggleIcon(Menu);
+      setTemp(0);
+    }
+
     console.log("toggle button clicked");
   }
   return (
@@ -42,7 +53,7 @@ export default function SideBar() {
         </ul>
 
         <div id="SideBar_Toggle_button" onClick={toggleSidebar}>
-          <Menu color="teal" strokeWidth={4} size={30}/>
+          <ToggleIcon color="white" strokeWidth={2.3} size={25} />
         </div>
       </div>
     </div>
